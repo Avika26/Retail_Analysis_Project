@@ -1,4 +1,4 @@
-# 🛒 Retail Customer Analysis
+# Retail Customer Analysis
 
 **End-to-end retail data analysis pipeline · 125,000 transactions · 6,879 customers · 2011–2015**
 
@@ -52,7 +52,7 @@ Retail_Analysis_Project/
 ├── Phase3_Data_Analysis.ipynb           # Python EDA + all charts
 ├── Phase4_Reporting.ipynb               # Multi-sheet Excel report generation
 ├── Retail_Analysis_Report.xlsx          # Final Excel output
-└── charts/                              # All saved visualizations
+└── data/                              # All saved visualizations
 ```
 
 ---
@@ -112,31 +112,31 @@ Generated a multi-sheet Excel workbook using `openpyxl`:
 ## Visualizations
 
 ### Sales by Year
-![Sales by Year](charts/chart1_sales_by_year.png)
+![Sales by Year](data/chart1_sales_by_year.png)
 
 ### Monthly Sales Trend
-![Monthly Trend](charts/chart2_monthly_trend.png)
+![Monthly Trend](data/chart2_monthly_trend.png)
 
 ### Year-over-Year Growth Rate
-![YoY Growth](charts/chart6_yoy_growth.png)
+![YoY Growth](data/chart6_yoy_growth.png)
 
 ### Transaction Amount Distribution
-![Distribution](charts/chart3_amount_distribution.png)
+![Distribution](data/chart3_amount_distribution.png)
 
 ### Z-Score Outlier Detection
-![Z-Score](charts/chart_zscore.png)
+![Z-Score](data/chart_zscore.png)
 
 ### Campaign Response Rate
-![Response Rate](charts/chart4_response_rate.png)
+![Response Rate](data/chart4_response_rate.png)
 
 ### Responders vs Non-Responders — Avg Spending
-![Spending vs Response](charts/chart5_spending_vs_response.png)
+![Spending vs Response](data/chart5_spending_vs_response.png)
 
 ### Customer Segmentation
-![Segments](charts/chart7_segments.png)
+![Segments](data/chart7_segments.png)
 
 ### Customer Churn Analysis
-![Churn](charts/chart8_churn.png)
+![Churn](data/chart8_churn.png)
 
 ---
 
