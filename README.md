@@ -52,6 +52,7 @@ Retail_Analysis_Project/
 ├── Phase3_Data_Analysis.ipynb           # Python EDA + all charts
 ├── Phase4_Reporting.ipynb               # Multi-sheet Excel report generation
 ├── Retail_Analysis_Report.xlsx          # Final Excel output
+├── Retail_Analysis_Dashboard.pbit       # Power BI Dashboard template
 └── data/                              # All saved visualizations
 ```
 
@@ -137,6 +138,31 @@ Generated a multi-sheet Excel workbook using `openpyxl`:
 
 ### Customer Churn Analysis
 ![Churn](data/chart8_churn.png)
+
+---
+
+## Power BI Dashboard
+
+An interactive dashboard built on top of this analysis using Power BI.
+
+Features:
+
+
+5 KPI cards — Total Sales, Total Customers, Churn Rate, Avg Transaction, Response Rate
+Conditional formatting — Churn Rate auto-turns red above 30%, 2015 bar highlighted red
+Bookmark toggle — switch between Sales View (bar charts) and Customer View (donuts)
+Drillthrough — right click any customer → full individual customer detail page with transaction history
+Custom tooltip — hover over any chart to see summary stats
+Year slicer — filter all visuals by year simultaneously
+
+
+To open:
+
+
+Download Retail_Analysis_Dashboard.pbit from this repo
+Open in Power BI Desktop
+When prompted, point to the 3 CSV files (clean_transactions.csv, clean_customer_summary.csv, clean_response.csv)
+Dashboard loads with all visuals and interactivity intact
 
 ---
 
