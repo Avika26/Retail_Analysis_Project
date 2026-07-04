@@ -164,6 +164,15 @@ Open in Power BI Desktop
 When prompted, point to the 3 CSV files (clean_transactions.csv, clean_customer_summary.csv, clean_response.csv)
 Dashboard loads with all visuals and interactivity intact
 
+
+## Dashboard Visualizations
+
+### Sales view
+![Sales View](data/SalesView.png)
+
+### Customer view
+![Customer View](data/CustomerView.png)
+
 ---
 
 ## Libraries Used
@@ -188,6 +197,10 @@ Dashboard loads with all visuals and interactivity intact
 jupyter notebook phase2_cleaning.ipynb
 jupyter notebook Phase3_Data_Analysis.ipynb
 jupyter notebook Phase4_Reporting.ipynb
+
+# Step 3 — Open Power BI Dashboard
+# Open Retail_Analysis_Dashboard.pbit in Power BI Desktop
+# Point to the 3 CSV files when prompted
 ```
 
 > Make sure your MySQL credentials are configured before running.
