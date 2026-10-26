@@ -1,7 +1,6 @@
 # Retail Customer Analysis
 
-**End-to-end retail data analysis pipeline · 125,000 transactions · 6,889 customers · 2011–2015**
-
+End-to-end retail data analysis pipeline · 125,000 transactions · 6,889 customers · 2011 to March 2015
 ---
 
 ## Key Questions Investigated
@@ -16,7 +15,7 @@
 ## Key Findings
 
 ### Sales Trend — Growth Then Collapse
-Sales grew sharply from 2011 to 2012 (+58% YoY), stayed stable through 2013–2014, then crashed by nearly **80% in 2015**. Monthly data shows consistent performance in the ₹170K–185K range, with the collapse concentrated at the end of 2015.
+Sales grew 58% from 2011 to 2012. The data runs from 2011 to mid-March 2015, so 2015 contains only about 2.5 months and is not comparable to full years. The apparent 2015 decline reflects this coverage gap, not a change in business performance.
 
 ### Campaign Response Rate
 Only **9.4%** of customers responded to the marketing campaign — but those who did responded with their wallets.
@@ -30,15 +29,12 @@ Only **9.4%** of customers responded to the marketing campaign — but those who
 > Responders spend **~27% more** on average. Targeting high spenders for campaigns = significantly better ROI.
 
 ### Customer Churn
-| Status | Customers |
-|---|---|
-| Active | ~4,200 |
-| Churned | ~2,670 |
+A customer is counted as inactive if they made no purchase in 2015. Of 6,889 customers, 2,664 (38.7%) had no 2015 purchase and 4,225 were active. Because the data ends in March 2015, this figure may overstate churn. A longer observation window would be needed to confirm it.
 
 > **38.7% churn rate** — nearly 1 in 3 customers made no purchase after January 2015. Retention should be a top business priority.
 
 ### Data Quality
-Zero outliers detected across all 125,000 transactions using Z-score analysis (±3 standard deviation threshold). Data was clean and reliable for analysis.
+Cleaning checks found no nulls, duplicates, or invalid transaction amounts. A Z-score check (±3 SD) flagged no outliers. Because transaction amounts are right-skewed, this method can miss real outliers, so an IQR check is recommended as a follow-up.
 
 ---
 
@@ -211,11 +207,11 @@ jupyter notebook Phase4_Reporting.ipynb
 
 Three things stood out clearly from this analysis:
 
-**1.** The 2015 sales collapse is the biggest signal in the data — an ~80% drop in a single year needs investigation. Whether it's a data issue or a real business event, it can't be ignored.
+**1.** Sales grew strongly from 2011 to 2012. The 2015 figure covers only January to mid-March and should not be read as a decline.
 
 **2.** Campaign targeting strategy matters more than campaign volume — responders already spend 27% more, so focusing campaigns on high-spend segments would improve returns without increasing spend.
 
-**3.** Churn at 38.7% is high enough to hurt long-term growth — retaining even a fraction of churned customers through re-engagement would have a measurable revenue impact.
+**3.** 38.7% of customers made no purchase in 2015. Because the window is short, this is an estimate of inactivity rather than a confirmed churn rate, and retention is still worth investigating with a longer window.
 
 ---
 
