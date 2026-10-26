@@ -1,6 +1,7 @@
 # Retail Customer Analysis
 
 End-to-end retail data analysis pipeline · 125,000 transactions · 6,889 customers · 2011 to March 2015
+
 ---
 
 ## Key Questions Investigated
